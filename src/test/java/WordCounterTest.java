@@ -13,4 +13,13 @@ public class WordCounterTest {
     assertEquals(expectedOutput, testWordCounter.runWordCount("abc"));
   }
 
+  @Test
+  public void runWordCounter_separateStringBySpaces_ArrayList(){
+    WordCounter testWordCounter = new WordCounter();
+    List<Object> expectedOutput = new ArrayList<>();
+    expectedOutput.add("abc");
+    expectedOutput.add("def");
+    assertEquals(expectedOutput, testWordCounter.runWordCount("abc def"));
+  }
+
 }
