@@ -23,7 +23,7 @@ public class WordCounterTest {
   }
 
   @Test
-  public void runWordCount_countNumberOfWords_int(){
+  public void count_countNumberOfWords_int(){
     WordCounter testWordCounter = new WordCounter();
     List<Object> expectedOutput = new ArrayList<>();
     expectedOutput.add("abc");
