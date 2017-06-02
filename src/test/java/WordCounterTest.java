@@ -8,7 +8,7 @@ public class WordCounterTest {
   @Test
   public void runWordCounter_takeInString_String() {
     WordCounter testWordCounter = new WordCounter();
-    List<Object> expectedOutput = new ArrayList<Object>();
+    List<Object> expectedOutput = new ArrayList<>();
     expectedOutput.add("abc");
     assertEquals(expectedOutput, testWordCounter.runWordCount("abc"));
   }
