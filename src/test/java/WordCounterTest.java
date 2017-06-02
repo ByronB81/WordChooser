@@ -22,4 +22,15 @@ public class WordCounterTest {
     assertEquals(expectedOutput, testWordCounter.runWordCount("abc def"));
   }
 
+  @Test
+  public void runWordCount_countNumberOfWords_int(){
+    WordCounter testWordCounter = new WordCounter();
+    List<Object> expectedOutput = new ArrayList<>();
+    expectedOutput.add("abc");
+    expectedOutput.add("def");
+    int testNum = expectedOutput.size();
+    assertEquals(testNum, testWordCounter.runWordCount("abc def"));
+  }
+
+
 }
