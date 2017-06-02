@@ -1,7 +1,15 @@
-public class WordCounter {
+import java.util.ArrayList;
+import java.util.List;
 
-  public String runWordCount(String userInput){
-    return userInput;
+public class WordCounter {
+  String userString;
+
+  public List<Object> runWordCount(String userInput){
+    List<Object> wordArray = new ArrayList<Object>();
+    wordArray.add(userInput);
+
+
+    return wordArray;
 
   }
 
