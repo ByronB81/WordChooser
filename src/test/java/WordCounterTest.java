@@ -6,30 +6,31 @@ import java.util.List;
 public class WordCounterTest {
 
   @Test
-  public void runWordCounter_takeInString_String() {
+  public void arrayCharles_takeInString_String() {
     WordCounter testWordCounter = new WordCounter();
     List<Object> expectedOutput = new ArrayList<>();
     expectedOutput.add("abc");
-    assertEquals(expectedOutput, testWordCounter.runWordCount("abc"));
+    assertEquals(expectedOutput, testWordCounter.arrayCharles("abc"));
   }
 
   @Test
-  public void runWordCounter_separateStringBySpaces_ArrayList(){
+  public void arrayCharles_separateStringBySpaces_ArrayList(){
     WordCounter testWordCounter = new WordCounter();
     List<Object> expectedOutput = new ArrayList<>();
     expectedOutput.add("abc");
     expectedOutput.add("def");
-    assertEquals(expectedOutput, testWordCounter.runWordCount("abc def"));
+    assertEquals(expectedOutput, testWordCounter.arrayCharles("abc def"));
   }
 
   @Test
-  public void count_countNumberOfWords_int(){
+  public void countChocula_countNumberOfWords_int(){
     WordCounter testWordCounter = new WordCounter();
     List<Object> expectedOutput = new ArrayList<>();
+    testWordCounter.arrayCharles("abc def");
     expectedOutput.add("abc");
     expectedOutput.add("def");
     int testNum = expectedOutput.size();
-    assertEquals(testNum, testWordCounter.runWordCount("abc def"));
+    assertEquals(testNum, countChocula(testWordCounter));
   }
 
 

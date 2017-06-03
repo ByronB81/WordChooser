@@ -5,7 +5,7 @@ public class WordCounter {
   String userString;
   int wordCount;
 
-  public int runWordCount(String userInput){
+  public List<String> arrayCharles(String userInput){
     List<String> wordArray = new ArrayList<>();
     for (String word : userInput.split(" ")){
       wordArray.add(word);
@@ -13,8 +13,12 @@ public class WordCounter {
 
     wordCount = wordArray.size();
 
-    return wordCount;
+    return wordArray;
 
+  }
+
+  public int countChocula(WordCounter userArray){
+    return userArray.size();
   }
 
   // public int count(List<String> functionArray){
